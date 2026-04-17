@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout — Grand Hyatt Singapore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="top-bar">
+        <button class="icon-btn" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <a href="index.html" class="brand-logo"><img src="https://ireward.superghs.com/resource/yqhyattsgstore/logo/logo.jpg?v1.0004" alt="Grand Hyatt Singapore"></a>
+        <a href="cart.html" class="icon-btn" aria-label="Cart">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="badge-count">1</span>
+        </a>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="shop.html">The Online Shop</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="celebrations.html">Celebrations</a></li>
+            <li class="has-dropdown"><a href="shop.html">Shop by Category</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="shop.html">Retreats</a></li>
+            <li><a href="shop.html">The Festive Season</a></li>
+            <li><a href="shop.html">New Year's Eve Events</a></li>
+            <li><a href="shop.html">Father's Day Brunch</a></li>
+            <li><a href="shop.html">Chinese New Year</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="checkout-wrapper">
+    <a href="cart.html" class="back-link">‹ Back to cart</a>
+
+    <!-- Step indicator -->
+    <div class="checkout-steps fade-up" id="checkoutSteps">
+        <div class="step-item active" data-step="1"><span class="step-num">1</span> Information</div>
+        <div class="step-divider"></div>
+        <div class="step-item" data-step="2"><span class="step-num">2</span> Shipping</div>
+        <div class="step-divider"></div>
+        <div class="step-item" data-step="3"><span class="step-num">3</span> Payment</div>
+        <div class="step-divider"></div>
+        <div class="step-item" data-step="4"><span class="step-num">4</span> Review</div>
+    </div>
+
+    <div class="checkout-grid fade-up">
+        <div>
+            <!-- Step 1: Information -->
+            <div class="checkout-step" data-step-content="1">
+                <div class="checkout-form-card">
+                    <h2 class="checkout-form-title">Contact information</h2>
+                    <div class="form-group-gh">
+                        <label class="form-label-sm">Email</label>
+                        <input type="email" class="form-control-gh" value="test@example.com" placeholder="you@example.com">
+                    </div>
+                    <div class="form-row-gh">
+                        <div class="form-group-gh">
+                            <label class="form-label-sm">First name</label>
+                            <input type="text" class="form-control-gh" value="John">
+                        </div>
+                        <div class="form-group-gh">
+                            <label class="form-label-sm">Last name</label>
+                            <input type="text" class="form-control-gh" value="Doe">
+                        </div>
+                    </div>
+                    <div class="form-group-gh">
+                        <label class="form-label-sm">Phone</label>
+                        <input type="tel" class="form-control-gh" value="+65 9123 4567">
+                    </div>
+                    <button class="continue-btn" data-next="2">Continue <span class="arrow">→</span></button>
+                </div>
+            </div>
+
+            <!-- Step 2: Shipping -->
+            <div class="checkout-step" data-step-content="2" style="display:none;">
+                <div class="checkout-form-card">
+                    <h2 class="checkout-form-title">Shipping address</h2>
+                    <div class="form-group-gh">
+                        <label class="form-label-sm">Street address</label>
+                        <input type="text" class="form-control-gh" value="10 Scotts Road">
+                    </div>
+                    <div class="form-row-gh">
+                        <div class="form-group-gh">
+                            <label class="form-label-sm">City</label>
+                            <input type="text" class="form-control-gh" value="Singapore">
+                        </div>
+                        <div class="form-group-gh">
+                            <label class="form-label-sm">Postal code</label>
+                            <input type="text" class="form-control-gh" value="228211">
+                        </div>
+                    </div>
+                    <div class="form-group-gh">
+                        <label class="form-label-sm">Country</label>
+                        <input type="text" class="form-control-gh" value="Singapore">
+                    </div>
+                    <button class="continue-btn" data-next="3">Continue <span class="arrow">→</span></button>
+                </div>
+            </div>
+
+            <!-- Step 3: Payment -->
+            <div class="checkout-step" data-step-content="3" style="display:none;">
+                <div class="checkout-form-card">
+                    <h2 class="checkout-form-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        Payment
+                    </h2>
+                    <div class="form-group-gh">
+                        <label class="form-label-sm">Card number</label>
+                        <input type="text" class="form-control-gh" value="4111 1111 1111 1111">
+                    </div>
+                    <div class="form-group-gh">
+                        <label class="form-label-sm">Name on card</label>
+                        <input type="text" class="form-control-gh" value="John Doe">
+                    </div>
+                    <div class="form-row-gh">
+                        <div class="form-group-gh">
+                            <label class="form-label-sm">Expiry date</label>
+                            <input type="text" class="form-control-gh" value="12/27">
+                        </div>
+                        <div class="form-group-gh">
+                            <label class="form-label-sm">CVV</label>
+                            <input type="text" class="form-control-gh" value="123">
+                        </div>
+                    </div>
+                    <button class="continue-btn" data-next="4">Continue <span class="arrow">→</span></button>
+                </div>
+            </div>
+
+            <!-- Step 4: Review -->
+            <div class="checkout-step" data-step-content="4" style="display:none;">
+                <div class="review-card">
+                    <div class="review-edit" data-goto="1">Edit</div>
+                    <div class="review-label">Contact</div>
+                    <div class="review-content">
+                        test@example.com<br>
+                        +65 9123 4567
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-edit" data-goto="2">Edit</div>
+                    <div class="review-label">Ship to</div>
+                    <div class="review-content">
+                        John Doe<br>
+                        10 Scotts Road<br>
+                        Singapore, 228211<br>
+                        Singapore
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-edit" data-goto="3">Edit</div>
+                    <div class="review-label">Payment</div>
+                    <div class="review-content">
+                        **** **** **** 1111<br>
+                        John Doe
+                    </div>
+                </div>
+                <button class="continue-btn" id="placeOrderBtn">Place order <span class="arrow">→</span></button>
+            </div>
+        </div>
+
+        <aside class="checkout-summary">
+            <h3 class="checkout-summary-title">Order summary</h3>
+            <div class="summary-item">
+                <div class="summary-item-img">
+                    <img src="https://picsum.photos/seed/gh157898554506/400/400" alt="Signature Chocolate Cake">
+                </div>
+                <div class="summary-item-info">
+                    <div class="name">Signature Chocolat...</div>
+                    <div class="qty">Qty: 1</div>
+                </div>
+                <div class="summary-item-price">$78.00</div>
+            </div>
+
+            <div class="summary-row"><span>Subtotal</span><span>$78.00</span></div>
+            <div class="summary-row"><span>Shipping</span><span>$15.00</span></div>
+            <div class="summary-row"><span>Tax (9%)</span><span>$7.02</span></div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-total" style="margin-bottom:0;">
+                <span class="label">Total</span>
+                <span>$100.02</span>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div>
+            <div class="footer-brand">Grand Hyatt Singapore</div>
+            <p class="footer-desc">Curated cakes, artisan hampers, and premium wines.</p>
+        </div>
+        <div>
+            <div class="footer-title">Shop</div>
+            <ul class="footer-links">
+                <li><a href="shop.html">All Products</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer-title">Support</div>
+            <ul class="footer-links">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Delivery</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer-title">About</div>
+            <ul class="footer-links">
+                <li><a href="#">Our Story</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 Grand Hyatt Singapore. All rights reserved.</div>
+</footer>
+
+<div class="chat-widget">
+    <span class="chat-k">K</span>
+    <span>Kimi Agent</span>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+$(function () {
+    function goToStep(step) {
+        step = parseInt(step);
+        $('.checkout-step').hide();
+        $('.checkout-step[data-step-content="' + step + '"]').fadeIn(300);
+
+        $('#checkoutSteps .step-item').each(function () {
+            var s = parseInt($(this).data('step'));
+            $(this).removeClass('active completed');
+            if (s < step) {
+                $(this).addClass('completed');
+                var $num = $(this).find('.step-num');
+                if ($num.text().match(/^\d+$/)) $num.html('✓');
+            } else if (s === step) {
+                $(this).addClass('active');
+                $(this).find('.step-num').text(s);
+            } else {
+                $(this).find('.step-num').text(s);
+            }
+        });
+
+        $('html, body').animate({ scrollTop: $('.checkout-wrapper').offset().top - 100 }, 400);
+    }
+
+    $('.continue-btn[data-next]').on('click', function () {
+        goToStep($(this).data('next'));
+    });
+
+    $('.review-edit').on('click', function () {
+        goToStep($(this).data('goto'));
+    });
+
+    $('#placeOrderBtn').on('click', function () {
+        window.ghToast && window.ghToast('Order placed! Confirmation sent to your email.');
+        $(this).text('Processing…').prop('disabled', true);
+    });
+});
+</script>
+</body>
+</html>

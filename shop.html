@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products — Grand Hyatt Singapore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="top-bar">
+        <button class="icon-btn" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <a href="index.html" class="brand-logo"><img src="https://ireward.superghs.com/resource/yqhyattsgstore/logo/logo.jpg?v1.0004" alt="Grand Hyatt Singapore"></a>
+        <a href="cart.html" class="icon-btn" aria-label="Cart">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </a>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li class="active"><a href="shop.html">The Online Shop</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="celebrations.html">Celebrations</a></li>
+            <li class="has-dropdown">
+                <a href="shop.html">Shop by Category</a>
+                <div class="dropdown-menu-gh">
+                    <a href="shop.html">Cakes &amp; Pastries</a>
+                    <a href="shop.html">Hampers</a>
+                    <a href="shop.html">Wine &amp; Champagne</a>
+                    <a href="shop.html">Dining</a>
+                    <a href="shop.html">Wellness</a>
+                </div>
+            </li>
+            <li class="nav-divider"></li>
+            <li><a href="shop.html">Retreats</a></li>
+            <li><a href="shop.html">The Festive Season</a></li>
+            <li><a href="shop.html">New Year's Eve Events</a></li>
+            <li><a href="shop.html">Father's Day Brunch</a></li>
+            <li><a href="shop.html">Chinese New Year</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="section" style="padding-top: 60px;">
+    <div class="fade-up" style="margin-bottom: 40px;">
+        <div class="section-eyebrow">SHOP</div>
+        <h1 class="section-title" style="margin-bottom: 12px;">All Products</h1>
+        <p class="section-subtitle">Discover our curated collection of cakes, hampers, wines, and experiences.</p>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar fade-up">
+        <button class="filter-chip active" data-filter="all">All Products</button>
+        <button class="filter-chip" data-filter="cakes">Cakes, Cookies &amp; Pralines</button>
+        <button class="filter-chip" data-filter="dining">Dining</button>
+        <button class="filter-chip" data-filter="wine">Beverages</button>
+        <button class="filter-chip" data-filter="wellness">Wellness</button>
+        <button class="filter-chip" data-filter="brix">Brix Merchandise</button>
+        <button class="filter-chip" data-filter="celebration">Celebration <span class="chip-count">13 products</span></button>
+        <button class="filter-sort">Featured ⌄</button>
+    </div>
+
+    <div class="filter-seasonal fade-up" style="margin-bottom: 44px;">
+        <span class="seasonal-label">Seasonal:</span>
+        <button class="filter-chip seasonal-chip">The Festive Season</button>
+        <button class="filter-chip seasonal-chip">Retreats</button>
+        <button class="filter-chip seasonal-chip">Chinese New Year</button>
+        <button class="filter-chip seasonal-chip">Father's Day Brunch</button>
+        <button class="filter-chip seasonal-chip">New Year's Eve Events</button>
+    </div>
+
+    <!-- Products -->
+    <div class="product-grid stagger">
+        <div class="product-card" data-category="cakes">
+            <div class="product-img-wrap">
+                <span class="product-badge bestseller">Bestseller</span>
+                <img class="product-img" src="https://picsum.photos/seed/gh157898554506/600/600" alt="Signature Chocolate Cake">
+            </div>
+            <div class="product-category">CAKES &amp; PASTRIES</div>
+            <a href="product.html"><h3 class="product-name">Signature Chocolate Cake</h3></a>
+            <p class="product-desc">A modern classic—layers of velvety chocolate sponge, silky ganache, and refined finishes.</p>
+            <div class="product-price">From $78</div>
+        </div>
+        <div class="product-card" data-category="cakes">
+            <div class="product-img-wrap">
+                <span class="product-badge bestseller">Bestseller</span>
+                <img class="product-img" src="https://picsum.photos/seed/gh1548907040/600/600" alt="Grand Pralines Collection">
+            </div>
+            <div class="product-category">CAKES &amp; PASTRIES</div>
+            <a href="product.html"><h3 class="product-name">Grand Pralines Collection</h3></a>
+            <p class="product-desc">24 handcrafted pralines in an elegant gold gift box. Dark, milk, and white varieties.</p>
+            <div class="product-price">From $58</div>
+        </div>
+        <div class="product-card" data-category="hampers">
+            <div class="product-img-wrap">
+                <span class="product-badge bestseller">Bestseller</span>
+                <img class="product-img" src="https://picsum.photos/seed/gh160792059251/600/600" alt="The Grand Hamper">
+            </div>
+            <div class="product-category">HAMPERS</div>
+            <a href="product.html"><h3 class="product-name">The Grand Hamper</h3></a>
+            <p class="product-desc">Our signature seasonal selection featuring artisan treats, preserves and premium wines.</p>
+            <div class="product-price">From $218</div>
+        </div>
+        <div class="product-card" data-category="wine">
+            <div class="product-img-wrap">
+                <span class="product-badge bestseller">Bestseller</span>
+                <img class="product-img" src="https://picsum.photos/seed/gh156952946584/600/600" alt="Grand Hyatt Champagne Brut">
+            </div>
+            <div class="product-category">WINE &amp; CHAMPAGNE</div>
+            <a href="product.html"><h3 class="product-name">Grand Hyatt Champagne Brut</h3></a>
+            <p class="product-desc">Our house champagne—crisp, elegant, with fine bubbles and a delicate finish.</p>
+            <div class="product-price">From $128</div>
+        </div>
+
+        <div class="product-card" data-category="cakes">
+            <div class="product-img-wrap">
+                <span class="product-badge new">New</span>
+                <img class="product-img" src="https://picsum.photos/seed/gh1558961363/600/600" alt="Lemon Tart">
+            </div>
+            <div class="product-category">CAKES &amp; PASTRIES</div>
+            <a href="product.html"><h3 class="product-name">Citrus Lemon Tart</h3></a>
+            <p class="product-desc">Bright lemon curd in a crisp buttery pastry with torched meringue.</p>
+            <div class="product-price">From $42</div>
+        </div>
+        <div class="product-card" data-category="hampers">
+            <div class="product-img-wrap">
+                <span class="product-badge new">New</span>
+                <img class="product-img" src="https://picsum.photos/seed/gh160552256123/600/600" alt="Artisan Hamper">
+            </div>
+            <div class="product-category">HAMPERS</div>
+            <a href="product.html"><h3 class="product-name">The Pantry Hamper</h3></a>
+            <p class="product-desc">Gourmet pantry essentials—artisan honey, preserves, olive oil and more.</p>
+            <div class="product-price">From $168</div>
+        </div>
+        <div class="product-card" data-category="wine">
+            <div class="product-img-wrap">
+                <span class="product-badge new">New</span>
+                <img class="product-img" src="https://picsum.photos/seed/gh156645234868/600/600" alt="Cellar Selection">
+            </div>
+            <div class="product-category">WINE &amp; CHAMPAGNE</div>
+            <a href="product.html"><h3 class="product-name">Cellar Selection Trio</h3></a>
+            <p class="product-desc">Three bottles of our finest wines—one red, one white, one sparkling.</p>
+            <div class="product-price">From $268</div>
+        </div>
+        <div class="product-card" data-category="wellness">
+            <div class="product-img-wrap">
+                <span class="product-badge new">New</span>
+                <img class="product-img" src="https://picsum.photos/seed/gh154055570047/600/600" alt="Spa Set">
+            </div>
+            <div class="product-category">WELLNESS</div>
+            <a href="product.html"><h3 class="product-name">Damai Spa Essentials</h3></a>
+            <p class="product-desc">Signature aromatherapy oils and bath salts from our spa collection.</p>
+            <div class="product-price">From $98</div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div>
+            <div class="footer-brand">Grand Hyatt Singapore</div>
+            <p class="footer-desc">Curated cakes, artisan hampers, and premium wines—crafted in our kitchens and delivered with care across Singapore.</p>
+        </div>
+        <div>
+            <div class="footer-title">Shop</div>
+            <ul class="footer-links">
+                <li><a href="shop.html">All Products</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="celebrations.html">Celebrations</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer-title">Support</div>
+            <ul class="footer-links">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer-title">About</div>
+            <ul class="footer-links">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 Grand Hyatt Singapore. All rights reserved.</div>
+</footer>
+
+<div class="chat-widget">
+    <span class="chat-k">K</span>
+    <span>Kimi Agent</span>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
