@@ -744,6 +744,64 @@ a:hover {
     font-weight: 500;
 }
 
+.product-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 14px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.35s var(--transition-smooth);
+}
+
+.btn-card {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 11px 12px;
+    border-radius: 50px;
+    font-size: 12.5px;
+    font-weight: 500;
+    font-family: var(--font-sans);
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.25s var(--transition-smooth);
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.btn-card.btn-add {
+    background: var(--gh-dark);
+    color: #fff;
+    border-color: var(--gh-dark);
+}
+
+.btn-card.btn-add:hover {
+    background: var(--gh-gold-dark);
+    border-color: var(--gh-gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(168, 138, 71, 0.28);
+}
+
+.btn-card.btn-buy {
+    background: transparent;
+    color: var(--gh-dark);
+    border-color: var(--gh-border);
+}
+
+.btn-card.btn-buy:hover {
+    background: var(--gh-dark);
+    color: #fff;
+    border-color: var(--gh-dark);
+    transform: translateY(-2px);
+}
+
+.btn-card svg {
+    width: 14px;
+    height: 14px;
+}
+
 /* ============================================
    PRODUCT DETAIL
 ============================================ */

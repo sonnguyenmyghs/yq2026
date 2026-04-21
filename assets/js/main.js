@@ -102,13 +102,18 @@ $(function () {
     });
 
     /* ===== Add to cart ===== */
-    $(document).on('click', '.add-to-cart-btn', function (e) {
+    $(document).on('click', '.add-to-cart-btn, .btn-card.btn-add', function (e) {
         e.preventDefault();
         var $btn = $(this);
         $btn.addClass('adding');
 
-        // Cart badge bump
-        var $badge = $('.icon-btn .badge-count');
+        // Ensure badge exists (pages without an existing cart badge)
+        var $cartLink = $('.icon-btn[href="cart.html"]');
+        var $badge = $cartLink.find('.badge-count');
+        if (!$badge.length) {
+            $badge = $('<span class="badge-count">0</span>');
+            $cartLink.append($badge);
+        }
         var count = parseInt($badge.text()) || 0;
         $badge.text(count + 1);
         $badge.css('transform', 'scale(1.4)');
